@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hilal Amin Construction Company | Financial Management</title>
+  <meta name="description" content="Hilal Amin Construction Company financial management system prototype">
+  <script>
+    (function () {
+      const hasSession = localStorage.getItem('hacfm_session') || sessionStorage.getItem('hacfm_session');
+      const target = hasSession ? (JSON.parse(hasSession).user?.role === 'Project User' ? 'user.html' : 'admin.html') : 'login.html';
+      window.location.replace(target);
+    }());
+  </script>
+  <style>html,body{height:100%;margin:0;background:#06152f;color:#fff;font-family:Inter,system-ui,sans-serif}main{height:100%;display:grid;place-items:center}.loader{display:flex;gap:12px;align-items:center;color:#a9b8d0;font-size:14px}.dot{width:10px;height:10px;border-radius:50%;background:#087bff;box-shadow:0 0 18px #087bff;animation:pulse 1s infinite alternate}@keyframes pulse{to{opacity:.25;transform:scale(.6)}}</style>
+</head>
+<body><main><div class="loader"><span class="dot"></span>Loading financial workspace…</div></main></body>
+</html>
